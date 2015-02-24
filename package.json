@@ -1,0 +1,19 @@
+{
+    "name": "FlotLine",
+    "iconPath": "/icons/widget.png",
+    "author": "Puyb (puyb@puyb.net)",
+    "version": "1.0.0",
+    "copyright": "(c) 2015 Puyb",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Puyb/FloLine"
+    },
+    "keywords": ["wakanda", "widget"],
+    "engines": {"wakanda": ">= 11"},
+    "license": "MIT",
+    "loadDependencies": [
+        {"file": "jquery.flot.js"},
+        {"file": "widget.js"},
+        {"file": "designer.js", "studioOnly": true}
+    ]
+}
