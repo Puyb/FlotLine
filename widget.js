@@ -14,8 +14,15 @@ WAF.define('FlotLine', ['waf-core/widget'], function(widget) {
         init: function() {
             this.data.onPageChange(function(page) {
                 data = page.map(function(item) { return [ item.x, item.y ] });
-                console.log(data);
-                $.plot(this.node, [ data ]);
+                $.plot(this.node, [ data ], {
+                    series: {
+                        curvedLines: {
+                            apply: true,
+                            active: true,
+                            monotonicFit: true
+                        }
+                    }
+                });
             });
         }
     });

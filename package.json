@@ -13,6 +13,7 @@
     "license": "MIT",
     "loadDependencies": [
         {"file": "jquery.flot.js"},
+        {"file": "curvedLines.js"},
         {"file": "widget.js"},
         {"file": "designer.js", "studioOnly": true}
     ]
